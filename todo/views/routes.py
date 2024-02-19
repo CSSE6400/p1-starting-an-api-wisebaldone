@@ -59,7 +59,7 @@ def update_todo(id):
     ])
 
 @api.route('/todos/<int:id>', methods=['DELETE'])
-def create_todo(id):
+def delete_todo(id):
     return jsonify([{
         "id": id,
         "title": "Watch CSSE6400 Lecture",
